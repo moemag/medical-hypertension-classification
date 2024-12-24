@@ -162,6 +162,15 @@ A sequential model is created using `keras.Sequential()`, the model consists of 
 
 `EarlyStopping` is configured to monitor the validation loss (`val_loss`) and stop training if it doesn't improve for 5 epochs. This helps prevent overfitting.
 
+```
+model = keras.Sequential([
+       layers.Conv1D(filters=64, kernel_size=3, activation='relu', input_shape=(X_train.shape[1], 1)),
+       layers.MaxPooling1D(pool_size=2, strides=1),
+       layers.Flatten(),
+       layers.Dense(units=100, activation='relu'), 
+       layers.Dense(units=1, activation='sigmoid') # binary classification
+   ])
+```
 The model is compiled, specifying the optimizer, loss function, and metrics to track during training:
 
 `optimizer='adam'`: Uses the Adam optimizer for updating model weights.
