@@ -183,5 +183,6 @@ The trained model is evaluated on the test data (`X_test`, `y_test`) using evalu
 Predictions are made on the test data using `predict`, and the predicted probabilities are converted to class labels (0 or 1) based on a threshold of 0.5.
 
 Performance metrics (confusion matrix, precision, recall, F1-score) are calculated using functions from `sklearn.metrics`. The confusion matrix is visualized using a heatmap. The training history (accuracy and validation accuracy over epochs) is plotted to visualize the model's learning progress.
+
 ![image](https://github.com/user-attachments/assets/aa41a0c7-ada7-4b91-a8bc-e281d67e8e40)
 ![image](https://github.com/user-attachments/assets/1f676311-ccde-4a33-9908-a6da0cf3ca60)
